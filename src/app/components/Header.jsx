@@ -1,4 +1,5 @@
 import Link from "next/link"
+import DarkModeSwitch from "./DarkModede"
 
 export default function Header() {
   return (
@@ -17,6 +18,10 @@ export default function Header() {
                 <Link href={'/sign-in'}>a propos du site </Link>
             </li>
             </ul>
+            <div className="flex items-center gap-4">
+              <DarkModeSwitch/>
+
+            </div>
 
                 <Link href={'/'} className="flex gap-1 items-center">
                  <span className="text-2xl font-bold bg-amber-500 py-1 px-2 rounded-lg "> Supporter de foot </span>
